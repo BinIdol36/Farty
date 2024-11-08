@@ -151,7 +151,7 @@ body {
 }
 
 .subtitle-content {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--color-secondary);
     font-weight: var(--fw-700);
     letter-spacing: 0.5em;
@@ -159,7 +159,7 @@ body {
 }
 
 .section-title {
-    font-size: 56px;
+    font-size: 38px;
     color: var(--color-text-black);
     font-weight: var(--fw-700);
     text-transform: capitalize;
@@ -484,10 +484,6 @@ body {
     font-weight: var(--fw-500);
 }
 
-.product-content .section-title {
-    font-size: 56px;
-}
-
 .product-content .section-content {
     padding-inline-end: 73px;
     padding-block: 28px 42px;
@@ -559,7 +555,8 @@ body {
 }
 
 .customer-card {
-    padding: 40px 70px;
+    padding-block: 40px;
+    padding-inline: 30px;
     background-color: var(--color-background-white);
     box-shadow: var(--shadow-3);
     border: 1px solid rgba(172, 172, 172, 0.29);
@@ -629,7 +626,7 @@ body {
 
 .growing-content {
     background-color: var(--color-background-white);
-    padding: 60px 90px;
+    padding: 60px 40px;
     margin-block-start: 94px;
     z-index: 1;
 }
@@ -646,7 +643,7 @@ body {
 }
 
 .growing-experience {
-    width: 230px;
+    width: 180px;
     height: 135px;
     background-color: var(--color-secondary);
     color: var(--color-background-white);
@@ -665,7 +662,7 @@ body {
 }
 
 .growing-experience .experience-year {
-    font-size: 48px;
+    font-size: 30px;
 }
 
 .growing-experience .experience-text {
@@ -1001,14 +998,38 @@ body {
         margin-inline: auto;
     }
 
+    .section-title {
+        font-size: 56px;
+    }
+
+    .subtitle-content {
+        font-size: 24px;
+    }
+
+    /**
+     * GROWING
+     */
+
+    .customer-card {
+        padding-inline: 70px;
+    }
+
     /**
      * GROWING
      */
 
     .growing-experience {
         width: 272px;
+        height: 135px;
     }
 
+    .growing-content {
+        padding: 60px 90px;
+    }
+
+    .growing-experience .experience-year {
+        font-size: 48px;
+    }
 
     /**
      * CONTACT

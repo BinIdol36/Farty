@@ -219,6 +219,10 @@ body {
   }
 }
 
+.menu {
+  position: relative;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -236,6 +240,44 @@ body {
     font-family: $ff-museoModerno;
     @include flex(center);
     gap: 16px;
+  }
+
+  &-navbar {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0px;
+
+    & .navbar-list {
+      @include flex(flex-start, center, column);
+      background-color: $color-background-white;
+      padding: 24px;
+      border-radius: $radius-6;
+
+      & .navbar-link {
+        color: $color-text-black;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+
+    &:is(:hover, :focus) {
+      display: block;
+    }
+  }
+
+  &-btn-menu {
+    display: none;
+
+    &:is(:focus) + .header-navbar {
+      display: block;
+    }
+
+    &.btn {
+      padding-inline: 12px;
+    }
   }
 }
 
@@ -1455,11 +1497,21 @@ body {
   .navbar {
     display: none;
   }
+
+  .logo {
+    margin-inline-end: auto;
+  }
   /**
   * HEADER
   */
-  .header .container {
-    justify-content: space-between;
+  .header {
+    & .container {
+      justify-content: space-between;
+    }
+
+    &-btn-menu {
+      display: block;
+    }
   }
   /**
   * HERO
@@ -1541,11 +1593,21 @@ body {
   .navbar {
     display: none;
   }
+
+  .logo {
+    margin-inline-end: auto;
+  }
   /**
   * HEADER
   */
-  .header .container {
-    justify-content: space-between;
+  .header {
+    & .container {
+      justify-content: space-between;
+    }
+
+    &-btn-menu {
+      display: block;
+    }
   }
   /**
   * HERO
@@ -1636,11 +1698,26 @@ body {
   .section-title {
     font-size: 46px;
   }
+
+  .logo {
+    margin-inline-end: auto;
+  }
   /**
   * HEADER
   */
-  .header .container {
-    justify-content: space-between;
+  .header {
+    & .container {
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    &-btn-menu {
+      display: block;
+    }
+
+    & .btn {
+      padding-inline: 12px;
+    }
   }
   /**
   * HERO

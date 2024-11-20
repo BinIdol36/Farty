@@ -1,0 +1,46 @@
+/** 
+* spacing
+*/
+
+$section-padding: 120px;
+
+/** 
+* border radius
+*/
+
+$radius-circle: 50%;
+$radius-3: 3px;
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-7: 7px;
+$radius-8: 8px;
+$radius-10: 10px;
+
+/** 
+* transition
+*/
+
+$transition-1: 0.25s ease;
+$transition-2: 0.5s ease;
+$transition-3: 0.3s ease-in-out;
+
+/** 
+* shadow
+*/
+
+$shadow-1: 0px 4px 14px 0px #0000000d;
+$shadow-2: 0px 0px 80px 0px #cbcbcb40;
+$shadow-3: 11px 130px 100px 30px #00000005;
+$shadow-4: 0px 9px 24px 8px #54a02929;
+
+/** 
+* breakpoints size
+*/
+
+$xl: 1200px; // Big screen
+$xxl: 1600px; // The screen is very large
+$xxxl: 1920px; // Ultra-large displays (5K, 4K, etc.)
+$lg: 992px; // Desktop
+$md: 768px; // Large tablet
+$sm: 576px; // Small Tablet / Phone
+$xs: 375px; // Small mobile phone

@@ -1,0 +1,59 @@
+@import './font';
+@import './variables';
+
+// Mixin for Media Queries
+@mixin respond-to($media) {
+  @if $media == xxlarge {
+    $min-width: $xxl + 1px;
+
+    @media (min-width: #{$min-width}) {
+      @content;
+    }
+  } @else if $media == xlarge {
+    $min-width: $xl + 1px;
+
+    @media (min-width: #{$min-width}) and (max-width: #{$xxl}) {
+      @content;
+    }
+  } @else if $media == large {
+    $min-width: $lg + 1px;
+
+    @media (min-width: #{$min-width}) and (max-width: #{$xl}) {
+      @content;
+    }
+  } @else if $media == medium {
+    $min-width: $md + 1px;
+
+    @media (min-width: #{$min-width}) and (max-width: #{$lg}) {
+      @content;
+    }
+  } @else if $media == small {
+    $min-width: $sm + 1px;
+
+    @media (min-width: #{$min-width}) and (max-width: #{$md}) {
+      @content;
+    }
+  } @else if $media == extra-small {
+    @media (max-width: #{$sm}) {
+      @content;
+    }
+  }
+}
+
+// Mixin for flex
+@mixin flex(
+  $align-items: flex-start,
+  $justify-content: flex-start,
+  $direction: row
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+}
+
+// Mixin for font-size
+@mixin font($weight: $fw-400, $size: 14px) {
+  font-weight: $weight;
+  font-size: $size;
+}

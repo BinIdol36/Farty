@@ -300,6 +300,34 @@ body {
     gap: 70px;
   }
 
+  &-banner {
+    position: relative;
+    height: 536px;
+    max-width: 504px;
+    width: 100%;
+    margin-inline: auto;
+
+    & .banner-1,
+    & .banner-2 {
+      position: absolute;
+    }
+
+    & .banner-1 {
+      width: 330px;
+      height: 444px;
+      top: 0;
+      left: 0;
+    }
+
+    & .banner-2 {
+      width: 336px;
+      height: 315px;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
   &-content {
     & .section-subtitle {
       margin-top: 23px;
@@ -348,7 +376,7 @@ body {
     border-radius: $radius-7;
     cursor: pointer;
     @include flex(center, center, column);
-    gap: 30px;
+    gap: 18px;
 
     &.active {
       background-color: $color-primary;
@@ -482,13 +510,13 @@ body {
     }
 
     & .section-title {
-      margin-block: 14px 24px;
+      margin-block: 14px 28px;
     }
 
     & .section-content {
       max-width: 320px;
       line-height: 25px;
-      margin-bottom: 44px;
+      margin-bottom: 40px;
     }
 
     & .btn {
@@ -1345,7 +1373,10 @@ body {
   /**
   * ABOUT
   */
-
+  .about .grid-list {
+    grid-template-columns: 505px 1fr;
+    gap: 24px;
+  }
   /**
   * SERVICE
   */

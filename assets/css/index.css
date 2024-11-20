@@ -310,6 +310,29 @@ body {
 .about .grid-list {
   gap: 70px;
 }
+.about-banner {
+  position: relative;
+  height: 536px;
+  max-width: 504px;
+  width: 100%;
+  margin-inline: auto;
+}
+.about-banner .banner-1, .about-banner .banner-2 {
+  position: absolute;
+}
+.about-banner .banner-1 {
+  width: 330px;
+  height: 444px;
+  top: 0;
+  left: 0;
+}
+.about-banner .banner-2 {
+  width: 336px;
+  height: 315px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
 .about-content .section-subtitle {
   margin-top: 23px;
 }
@@ -357,7 +380,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 18px;
 }
 .service-card.active {
   background-color: #54a029;
@@ -467,12 +490,12 @@ body {
   letter-spacing: 9px;
 }
 .product-content .section-title {
-  margin-block: 14px 24px;
+  margin-block: 14px 28px;
 }
 .product-content .section-content {
   max-width: 320px;
   line-height: 25px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 .product-content .btn {
   padding: 22px 54px;
@@ -1191,6 +1214,10 @@ body {
   /**
   * ABOUT
   */
+  .about .grid-list {
+    grid-template-columns: 505px 1fr;
+    gap: 24px;
+  }
   /**
   * SERVICE
   */

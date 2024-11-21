@@ -20,8 +20,7 @@
     <header class="header">
         <div class="container">
             <a href="." class="logo">
-                <img src="./assets/images/logo.png" alt="Farty" width="38" height="39" class="logo-image">
-                <span class="logo-name">Farty</span>
+                <img src="./assets/images/logo_text.png" alt="Farty" width="138" height="40" class="logo-image">
             </a>
             <nav class="navbar">
                 <ul class="navbar-list">
@@ -33,7 +32,8 @@
                 </ul>
             </nav>
             <div class="menu">
-                <button class="btn btn-secondary header-btn-menu">Menu</button>
+                <label for="toggle-menu" class="btn btn-secondary header-btn-menu">Menu</label>
+                <input type="checkbox" id="toggle-menu" style="display: none;" class="menu-toggle">
                 <nav class="header-navbar">
                     <ul class="navbar-list">
                         <li><a href="#" class="navbar-link">Home</a></li>
@@ -54,9 +54,7 @@
             <!-- 
              - #HERO
             -->
-            <!-- style="background-image: url(./assets/images/backgroundHero.png);" -->
-            <section class="section hero has-bg-image"
-                style="background-image: url(./assets/images/backgroundHero.png);">
+            <section class="section hero has-bg-image">
                 <div class="container">
                     <div class="hero-content">
                         <p class="hero-subtitle">A profession of needs</p>
@@ -66,13 +64,12 @@
                             agriculture</p>
                         <div class="btn-wrapper">
                             <a href="#" class="btn btn-secondary">Discover more</a>
-                            <button class="flex-btn">
+                            <a href="#" class="flex-btn">
                                 <div class="btn-icon">
-                                    <object type="image/svg+xml" data="./assets/images/watchVideo.svg" width="52"
-                                        height="52"></object>
+                                    <img src="./assets/images/watchVideo.svg" alt="play" width="52" height="52">
                                 </div>
                                 <span class="span">Watch video</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -85,10 +82,16 @@
             <section class="section about">
                 <div class="container grid-list">
                     <figure class="about-banner">
-                        <img src="./assets/images/about.jpg" alt="about banner" width="330" height="444"
-                            class="img-cover banner-1">
-                        <img src="./assets/images/vision.jpg" alt="about banner" width="336" height="315"
-                            class="img-cover banner-2">
+                        <img src="./assets/images/Image-Placeholder.png" alt="Welcome to organic agricul company"
+                            width="330" height="444" class="img-cover banner-1">
+                        <img src="./assets/images/Image-Placeholder.png" alt="Welcome to organic agricul company"
+                            width="336" height="315" class="img-cover banner-2">
+                        <div class="background-icon"></div>
+                        <div class="border-icon"></div>
+                        <img src="./assets/images/about-icon.png" alt="icon" width="94" height="93"
+                            class="img-cover icon">
+                        <img src="./assets/images/Vector.png" alt="icon" width="182" height="206"
+                            class="img-cover icon-2">
                     </figure>
                     <div class="about-content">
                         <div class="section-subtitle">
@@ -150,47 +153,47 @@
                             largest global agriculture</p>
                         <ul class="service-list">
                             <li class="has-after">
-                                <div class="service-card active">
+                                <a href="#" class="service-card active">
                                     <div class="card-icon">
                                         <img src="./assets/images/maternity.svg" alt="Work together" width="72"
-                                            height="72">
+                                            height="73">
                                     </div>
                                     <p class="card-text">Work together</p>
-                                </div>
+                                </a>
                             </li>
                             <li class="has-after">
-                                <div class="service-card">
+                                <a href="#" class="service-card">
                                     <div class="card-icon">
                                         <img src="./assets/images/tree.svg" alt="Tree plant" width="65" height="65">
                                     </div>
                                     <p class="card-text">Tree plant</p>
-                                </div>
+                                </a>
                             </li>
                             <li class="has-after">
-                                <div class="service-card">
+                                <a href="#" class="service-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/agriculture.svg" alt="Non GMO fruits" width="65"
+                                        <img src="./assets/images/agriculture.png" alt="Non GMO fruits" width="65"
                                             height="65">
                                     </div>
                                     <p class="card-text">Non GMO fruits</p>
-                                </div>
+                                </a>
                             </li>
                             <li class="has-after">
-                                <div class="service-card">
+                                <a href="#" class="service-card">
                                     <div class="card-icon">
                                         <img src="./assets/images/tractor.svg" alt="Modern equipment" width="79"
                                             height="65">
                                     </div>
                                     <p class="card-text">Modern equipment</p>
-                                </div>
+                                </a>
                             </li>
                             <li class="has-after">
-                                <div class="service-card">
+                                <a href="#" class="service-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/seral.svg" alt="Seral crops" width="65" height="65">
+                                        <img src="./assets/images/seral.png" alt="Seral crops" width="65" height="65">
                                     </div>
                                     <p class="card-text">Seral crops</p>
-                                </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -220,12 +223,15 @@
                             agriculture</p>
                         <a href="#" class="btn btn-secondary btn-wrapper">
                             <span class="span">View Details</span>
-                            <img src="./assets/images/arrow-right.svg" alt="" width="14" height="18">
+                            <img src="./assets/images/arrow-right.svg" alt="arrow" width="14" height="18">
                         </a>
                     </div>
                     <figure>
-                        <img src="./assets/images/vision.jpg" alt="about banner" width="647" height="521"
-                            class="img-cover">
+                        <div class="vision-video">
+                            <div class="vision-play">
+                                <img src="./assets/images/Polygon.png" alt="play" width="29" height="37">
+                            </div>
+                        </div>
                     </figure>
                 </div>
             </section>
@@ -252,8 +258,8 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-1.svg" alt="Natural wheats" width="39"
-                                            height="80">
+                                        <img src="./assets/images/vector-1.svg" alt="Natural wheats" width="60"
+                                            height="72" class="w-100">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Natural wheats</h3>
@@ -265,8 +271,8 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-2.svg" alt="Fresh fruits" width="45"
-                                            height="82">
+                                        <img src="./assets/images/vector-2.svg" alt="Fresh fruits" width="72"
+                                            height="71">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Fresh fruits</h3>
@@ -278,8 +284,8 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-3.svg" alt="Fresh vegetable" width="72"
-                                            height="70">
+                                        <img src="./assets/images/vector-3.svg" alt="Fresh vegetable" width="70"
+                                            height="78">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Fresh vegetable</h3>
@@ -291,8 +297,8 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-4.svg" alt="Modern Track" width="60"
-                                            height="48">
+                                        <img src="./assets/images/vector-4.svg" alt="Modern Track" width="74"
+                                            height="54">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Modern Track</h3>
@@ -304,7 +310,7 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-5.svg" alt="Farm plans" width="79" height="80">
+                                        <img src="./assets/images/vector-5.svg" alt="Farm plans" width="80" height="81">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Farm plans</h3>
@@ -316,8 +322,8 @@
                             <li>
                                 <div class="offer-card">
                                     <div class="card-icon">
-                                        <img src="./assets/images/vector-6.svg" alt="Healthy cattle" width="80"
-                                            height="61">
+                                        <img src="./assets/images/vector-6.svg" alt="Healthy cattle" width="81"
+                                            height="62">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">Healthy cattle</h3>
@@ -354,31 +360,26 @@
                             </div>
                         </li>
                         <li>
-                            <div class="product-card has-bg-image img-cover"
-                                style="background-image: url(./assets/images/product-1.jpg);">
+                            <div class="product-card has-bg-image img-cover">
                                 <h3 class="card-title">Fresh vegetables and fruits</h3>
                                 <p class="card-description">Agricultural products</p>
                                 <a href="#" class="flex-btn">
                                     <span class="span">Read More</span>
-                                    <img src="./assets/images/navigation.svg" alt="" width="24" height="24">
+                                    <img src="./assets/images/navigation.svg" alt="arrow" width="24" height="24">
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="product-card has-bg-image img-cover"
-                                style="background-image: url(./assets/images/product-2.jpg);"></div>
+                            <div class="product-card has-bg-image img-cover"></div>
                         </li>
                         <li>
-                            <div class="product-card has-bg-image img-cover"
-                                style="background-image: url(./assets/images/product-1.jpg);"></div>
+                            <div class="product-card has-bg-image img-cover"></div>
                         </li>
                         <li>
-                            <div class="product-card has-bg-image img-cover"
-                                style="background-image: url(./assets/images/product-2.jpg);"></div>
+                            <div class="product-card has-bg-image img-cover"></div>
                         </li>
                         <li>
-                            <div class="product-card has-bg-image img-cover"
-                                style="background-image: url(./assets/images/product-1.jpg);"></div>
+                            <div class="product-card has-bg-image img-cover"></div>
                         </li>
                     </ul>
                 </div>
@@ -406,8 +407,8 @@
                                         <div class="customer-card">
                                             <div class="card-header">
                                                 <figure class="card-image">
-                                                    <img src="./assets/images/avatar-1.jpg" alt="avatar" width="58"
-                                                        height="58" class="img-cover">
+                                                    <img src="./assets/images/avatar-1.jpg" alt="Jonathan Vallem"
+                                                        width="58" height="58" class="img-cover">
                                                 </figure>
                                                 <div class="card-profile">
                                                     <h3 class="card-name">Jonathan Vallem</h3>
@@ -423,8 +424,8 @@
                                         <div class="customer-card">
                                             <div class="card-header">
                                                 <figure class="card-image">
-                                                    <img src="./assets/images/avatar-2.jpg" alt="avatar" width="58"
-                                                        height="58" class="img-cover">
+                                                    <img src="./assets/images/avatar-2.jpg" alt="Smith Johnson"
+                                                        width="58" height="58" class="img-cover">
                                                 </figure>
                                                 <div class="card-profile">
                                                     <h3 class="card-name">Smith Johnson</h3>
@@ -469,7 +470,7 @@
 
             <section class="growing">
                 <div class="container">
-                    <img src="./assets/images/product-3.jpg" alt="growing banner" width="570" height="570"
+                    <img src="./assets/images/Image-Placeholder.png" alt="Growing products" width="570" height="570"
                         class="img-cover growing-image">
                     <div class="growing-experience">
                         <h2 class="experience-year">35 Years</h2>
@@ -516,6 +517,10 @@
             -->
 
             <section class="provide text-center">
+                <img src="./assets/images/provide-image.png" alt="provide background" width="229" height="283"
+                    class="provide-banner-1">
+                <img src="./assets/images/provide-image.png" alt="provide background" width="229" height="283"
+                    class="provide-banner-2">
                 <div class="container">
                     <div class="provide-content">
                         <h2 class="section-title">Provide you the highest quality products that meets your expectation
@@ -548,8 +553,9 @@
                         <ul class="blog-list grid-list">
                             <li>
                                 <div class="blog-card">
-                                    <figure class="card-banner img-holder" style="--width: 373px;--height: 280px;">
-                                        <img src="./assets/images/blog-1.jpg" alt="" width="373" height="280"
+                                    <figure class="card-banner" style="--width: 373px;--height: 280px;">
+                                        <img src="./assets/images/Image-Placeholder.png"
+                                            alt="Supplementing your diet towards life" width="373" height="280"
                                             class="img-cover">
                                     </figure>
                                     <div class="card-content">
@@ -566,8 +572,9 @@
                             </li>
                             <li>
                                 <div class="blog-card">
-                                    <figure class="card-banner img-holder" style="--width: 373px;--height: 280px;">
-                                        <img src="./assets/images/blog-2.jpg" alt="" width="373" height="280"
+                                    <figure class="card-banner" style="--width: 373px;--height: 280px;">
+                                        <img src="./assets/images/Image-Placeholder.png"
+                                            alt="Dietary Supplement report Market Expcted" width="373" height="280"
                                             class="img-cover">
                                     </figure>
                                     <div class="card-content">
@@ -584,8 +591,9 @@
                             </li>
                             <li>
                                 <div class="blog-card">
-                                    <figure class="card-banner img-holder" style="--width: 373px;--height: 280px;">
-                                        <img src="./assets/images/blog-3.jpg" alt="" width="373" height="280"
+                                    <figure class="card-banner" style="--width: 373px;--height: 280px;">
+                                        <img src="./assets/images/Image-Placeholder.png"
+                                            alt="Supplementing your diet towards life" width="373" height="280"
                                             class="img-cover">
                                     </figure>
                                     <div class="card-content">
@@ -648,8 +656,14 @@
                                 </li>
                             </ul>
                             <figure class="contact-banner">
-                                <img src="./assets/images/blog-2.jpg" alt="" width="278" height="204" class="banner-1">
-                                <img src="./assets/images/blog-1.jpg" alt="" width="432" height="238" class="banner-2">
+                                <img src="./assets/images/Image-Placeholder.png"
+                                    alt="Looking for agricultire & organic ECO services?" width="278" height="204"
+                                    class="banner-1">
+                                <img src="./assets/images/Image-Placeholder.png"
+                                    alt="Looking for agricultire & organic ECO services?" width="432" height="238"
+                                    class="banner-2">
+                                <div class="banner-block-1"></div>
+                                <div class="banner-block-2"></div>
                             </figure>
                         </div>
                         <div class="contact-form">
@@ -680,29 +694,42 @@
             <div class="container grid-list">
                 <div class="footer-bard">
                     <a href="#" class="logo">
-                        <img src="./assets/images/logo.png" alt="Farty" width="38" height="39" class="logo-image">
-                        <span class="logo-name">Farty</span>
+                        <img src="./assets/images/logo_text.png" alt="Farty" width="138" height="39" class="logo-image">
                     </a>
                     <p class="bard-text">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod.</p>
                     <ul class="bard-list">
                         <li>
-                            <a href="#" class="btn-link">
+                            <a href="#" class="btn-link mobile-active">
                                 <span>
                                     <object type="image/svg+xml" data="./assets/images/communication-call.svg"
                                         width="24" height="24"></object>
                                 </span>
                                 <span class="span">(62) 1829017</span>
                             </a>
+                            <p class="btn-link pc-active">
+                                <span>
+                                    <object type="image/svg+xml" data="./assets/images/communication-call.svg"
+                                        width="24" height="24"></object>
+                                </span>
+                                <span class="span">(62) 1829017</span>
+                            </p>
                         </li>
                         <li>
-                            <a href="#" class="btn-link">
+                            <a href="#" class="btn-link mobile-active">
                                 <span>
                                     <object type="image/svg+xml" data="./assets/images/communication-email.svg"
                                         width="24" height="24"></object>
                                 </span>
                                 <span class="span">Hello@studio.co</span>
                             </a>
+                            <p class="btn-link pc-active">
+                                <span>
+                                    <object type="image/svg+xml" data="./assets/images/communication-email.svg"
+                                        width="24" height="24"></object>
+                                </span>
+                                <span class="span">Hello@studio.co</span>
+                            </p>
                         </li>
                         <li>
                             <address class="bard-address">
@@ -760,37 +787,40 @@
                         <p class="footer-list-title">Recent Post</p>
                     </li>
                     <li>
-                        <div class="footer-item">
+                        <a href="#" class="footer-item">
                             <figure>
-                                <img src="./assets/images/blog-1.jpg" alt="" width="60" height="53">
+                                <img src="./assets/images/Image-Placeholder.png" alt="Agriculture business" width="60"
+                                    height="53">
                             </figure>
                             <div class="item-content">
                                 <time datetime="" class="item-time">02 Apr 2021</time>
                                 <p>Agriculture business</p>
                             </div>
-                        </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="footer-item">
+                        <a href="#" class="footer-item">
                             <figure>
-                                <img src="./assets/images/blog-2.jpg" alt="" width="60" height="53">
+                                <img src="./assets/images/Image-Placeholder.png" alt="Fertilizer Business" width="60"
+                                    height="53">
                             </figure>
                             <div class="item-content">
                                 <time datetime="" class="item-time">02 Apr 2021</time>
-                                <p>Fertilizer Business </p>
+                                <p>Fertilizer Business</p>
                             </div>
-                        </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="footer-item">
+                        <a href="#" class="footer-item">
                             <figure>
-                                <img src="./assets/images/blog-3.jpg" alt="" width="60" height="53">
+                                <img src="./assets/images/Image-Placeholder.png" alt="Organic Business" width="60"
+                                    height="53">
                             </figure>
                             <div class="item-content">
                                 <time datetime="" class="item-time">02 Apr 2021</time>
                                 <p class="item-text">Organic Business</p>
                             </div>
-                        </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -800,26 +830,27 @@
                 <p class="copyright">© Megha 2021, All Rights Reserved</p>
                 <ul class="social-list">
                     <li>
-                        <a href="#" class="social-link">
-                            <object type="image/svg+xml" data="./assets/images/twitter-bottom.svg" width="21"
-                                height="21"></object>
+                        <a href="#" class="social-link" target="_blank">
+                            <img src="./assets/images/twitter-bottom.svg" alt="twitter" width="21" height="21">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link">
-                            <object type="image/svg+xml" data="./assets/images/facebook-bottom.svg" width="21"
-                                height="21"></object>
+                        <a href="#" class="social-link" target="_blank">
+                            <img src="./assets/images/facebook-bottom.svg" alt="facebook" width="21" height="21">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link">
-                            <object type="image/svg+xml" data="./assets/images/google-bottom.svg" width="21"
-                                height="21"></object>
+                        <a href="#" class="social-link" target="_blank">
+                            <img src="./assets/images/google-bottom.svg" alt="google" width="21" height="21">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+        <img src="./assets/images/background-footer.png" alt="footer background" width="391" height="332"
+            class="footer-bg-1">
+        <img src="./assets/images/background-footer.png" alt="footer background" width="391" height="332"
+            class="footer-bg-2">
     </footer>
 </body>
 
